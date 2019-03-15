@@ -22,4 +22,23 @@ Run the docker compose command to run the docker cluster.
 $ docker-compose up 
 
 
+Possible Issue: docker-compose command not found: Refer https://github.com/docker/compose/releases
+
+Install docker compose by installing below binaries:
+#Download binaries from github for docker-compose
+$ curl -L https://github.com/docker/compose/releases/download/1.23.2/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+#Give executable permissions to the binary
+$ chmod +x /usr/local/bin/docker-compose
+#Create symbolic link to the executable in binaries
+$ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+
+
+
+
+
+
+
+
+
+
 
