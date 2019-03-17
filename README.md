@@ -1,8 +1,8 @@
-### elasticsearch-docker-compose
+# elasticsearch-docker-compose
 
 ## Elasticsearch docker compose for production 
 
-# Prequites
+### Prequites
 For linux (Amazon linux 1, RHEL7.5, Centos7) set `vm.max_map_count` to `262144`
 
 Go to /etc/sysctl.conf and add below line
@@ -18,7 +18,7 @@ vm.max_map_count=262144
 To apply the setting on a live system type: sysctl -w vm.max_map_count=262144
 
 
-# Install Docker with sudo previleges
+### Install Docker with sudo previleges
 
 ``` bash
 
@@ -39,7 +39,7 @@ Run the docker compose command to run the docker cluster.
 $ docker-compose up 
 ```
 
-# Possible Issue: docker-compose command not found: Refer https://github.com/docker/compose/releases
+#### Possible Issue: docker-compose command not found: Refer https://github.com/docker/compose/releases
 ``` bash
 $ docker-cpmpose
 -bash: docker-cpmpose: command not found
