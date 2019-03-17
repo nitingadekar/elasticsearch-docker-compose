@@ -101,7 +101,8 @@ $ curl -XGET "http://13.232.14.66:9200/_cluster/health?pretty" # use pubic or pr
 ```
 
 
-
+~ Thats it! you are good to go now.. ~
+Thanks for visiting
 
 
 
