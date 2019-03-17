@@ -63,6 +63,42 @@ Now run below command right away in the directory with docker-compose.yml
 ` $ docker-compose up `
 
 
+## Using the elasticsearch service
+
+Once the compose file is running, check the container status by 
+``` bash
+$ docker ps 
+```
+To check if the running continer ports are exposed and mapped, check all active ports and services running 
+``` bash
+$ netstat -tunlp
+```
+Start accessing the elasticsearch service on port 9200 port and localhost or from remote servers using the port 9200 and IP address
+
+```
+$ telnet localhost 9200
+```
+
+``` bash 
+$ curl -XGET "http://13.232.14.66:9200/_cluster/health?pretty" # use pubic or private IP of your server for accessing
+{
+  "cluster_name" : "elasticsearch",
+  "status" : "green",
+  "timed_out" : false,
+  "number_of_nodes" : 1,
+  "number_of_data_nodes" : 1,
+  "active_primary_shards" : 0,
+  "active_shards" : 0,
+  "relocating_shards" : 0,
+  "initializing_shards" : 0,
+  "unassigned_shards" : 0,
+  "delayed_unassigned_shards" : 0,
+  "number_of_pending_tasks" : 0,
+  "number_of_in_flight_fetch" : 0,
+  "task_max_waiting_in_queue_millis" : 0,
+  "active_shards_percent_as_number" : 100.0
+}
+```
 
 
 
