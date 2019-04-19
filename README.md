@@ -110,7 +110,7 @@ $ curl -XGET "http://localhost:9200/_cluster/health?pretty" # use pubic or priva
 Note: Copy the json output and use online tools to convert the json to csv and get table format output
 
 ~ Thats it! you are good to go now.. ~
-Thanks for visiting
+Thanks for reading.
 
 
 
